@@ -1,0 +1,36 @@
+# include: package:flutter_lints/flutter.yaml
+include: package:lints/recommended.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+  errors:
+    todo: warning
+    missing_return: error
+    unused_local_variable: warning
+
+linter:
+  rules:
+    - cancel_subscriptions
+    - sort_pub_dependencies
+
+dart_code_metrics:
+  anti-patterns:
+    - long-method
+    - long-parameter-list
+  enabled: true
+  metrics:
+    cyclomatic-complexity:
+      severity: warning
+      options:
+        - 10
+        - 20
+        - 30
+    lines-of-code:
+    severity:
+      - 10: warning
+      - 100: error
+    number-of-parameters:
+      severity: warning
+      value: 5

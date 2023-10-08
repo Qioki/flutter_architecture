@@ -1,0 +1,19 @@
+name: fa_data
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.2.0-97.0.dev <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+
+  fa_domain:
+    path: ../fa_domain
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
